@@ -26,7 +26,7 @@ import pandas as pd
 dt=pd.read_csv('./data/iris.csv')
 st.write(dt.head(10))
 
-t1 = dt['petal.length'].sum()
+dt1 = dt['petal.length'].sum()
 dt2 = dt['petal.width'].sum()
 dt3 = dt['sepal.length'].sum()
 dt4 = dt['sepal.width'].sum()
@@ -39,4 +39,3 @@ if st.button("show bar chart"):
     st.button("Not show bar chart")
 else :
     st.button("Not show bar chart") 
-    
